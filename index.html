@@ -8,20 +8,16 @@
     <meta name="keywords" content="Caribbean podcast, Caribbean newsletter, Caribbean culture, Caribbean diaspora, Caribbean innovation, JOS Productions, Caribbean Chronicles, Beehiiv, LinkedIn, Caribbean entrepreneurship, Caribbean Chronicles Jos Productions">
     <meta name="author" content="JOS Productions">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://josmedia.github.io">
+    <link rel="canonical" href="https://josproductions.com">
     
-    <!-- Structured Data for Google -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "JOS Productions",
-      "brand": {
-        "@type": "Brand",
-        "name": "Caribbean Chronicles by JOS"
-      },
-      "description": "A podcast and newsletter platform focused on Caribbean culture, featuring innovators, creators, and changemakers. Produced by JOS Productions and not affiliated with any other organizations.",
-      "url": "https://josmedia.github.io",
+      "brand": { "@type": "Brand", "name": "Caribbean Chronicles by JOS" },
+      "description": "A podcast and newsletter platform focused on Caribbean culture, featuring innovators, creators, and changemakers.",
+      "url": "https://josproductions.com",
       "sameAs": [
         "https://www.linkedin.com/company/caribbean-chronicles-by-jos",
         "https://open.spotify.com/show/0WqIBDQ7668WrpvQtxvQvS",
@@ -29,49 +25,33 @@
       ]
     }
     </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "PodcastSeries",
-      "name": "Caribbean Chronicles by JOS",
-      "description": "A podcast and newsletter platform highlighting Caribbean innovators, artists, and leaders. Connects the Caribbean diaspora and local talent. Focus: Culture, creativity, business, and shaping the future of the Caribbean region.",
-      "creator": {
-        "@type": "Organization",
-        "name": "JOS Productions"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "JOS Productions"
-      },
-      "genre": ["Culture", "Technology", "Entrepreneurship", "Business"],
-      "url": "https://josmedia.github.io"
-    }
-    </script>
-    
-    <!-- Open Graph / Social Media -->
+
     <meta property="og:title" content="Caribbean Chronicles by JOS | Pushing The Culture Forward">
     <meta property="og:description" content="A weekly podcast and newsletter exploring the stories, culture, and conversations shaping the Caribbean and its global impact.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://josmedia.github.io">
-    
-    <!-- Twitter Card -->
+    <meta property="og:url" content="https://josproductions.com">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Caribbean Chronicles by JOS">
     <meta name="twitter:description" content="A weekly podcast and newsletter exploring Caribbean stories, culture, and conversations.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { height: 100%; }
+
+        :root {
+            --cyan: #00D4FF;
+            --pink: #E91E8C;
+            --yellow: #FFE53B;
+            --purple: #6B2C91;
+            --white: #fff;
+            --glass: rgba(255,255,255,0.06);
+            --glass-border: rgba(255,255,255,0.12);
         }
-        
-        html, body {
-            height: 100%;
-        }
-        
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-family: 'DM Sans', sans-serif;
             background: #000;
             color: #fff;
             overflow-x: hidden;
@@ -79,41 +59,35 @@
             flex-direction: column;
             min-height: 100vh;
         }
-        
+
         .animated-bg {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
             z-index: -1;
             background: linear-gradient(135deg, #00D4FF 0%, #7FE8A2 25%, #FFE53B 50%, #E91E8C 75%, #6B2C91 100%);
             background-size: 400% 400%;
             animation: gradientShift 15s ease infinite;
         }
-        
+
         @keyframes gradientShift {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
-        
-        main {
-            flex: 1;
-        }
-        
+
+        main { flex: 1; }
+
         nav {
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
+            top: 0; left: 0; right: 0;
             z-index: 100;
             padding: 1.5rem 2rem;
             backdrop-filter: blur(20px);
-            background: rgba(0, 0, 0, 0.3);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(0,0,0,0.3);
+            border-bottom: 1px solid var(--glass-border);
         }
-        
+
         .nav-content {
             max-width: 1400px;
             margin: 0 auto;
@@ -121,33 +95,22 @@
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .logo {
-            font-size: 1.5rem;
-            font-weight: 800;
+            font-family: 'Syne', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 900;
             background: linear-gradient(135deg, #00D4FF, #E91E8C);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-        
-        .nav-links a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s;
-        }
-        
-        .nav-links a:hover {
-            color: #00D4FF;
-        }
-        
+
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { color: #fff; text-decoration: none; font-weight: 600; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--cyan); }
+
+        /* HERO */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -155,179 +118,126 @@
             justify-content: center;
             padding: 8rem 2rem 4rem;
         }
-        
-        .hero-content {
-            max-width: 1200px;
-            text-align: center;
-        }
-        
+
+        .hero-content { max-width: 1200px; text-align: center; }
+
         h1 {
+            font-family: 'Syne', sans-serif;
             font-size: clamp(3rem, 8vw, 7rem);
             font-weight: 900;
-            line-height: 1.1;
+            line-height: 1.05;
             margin-bottom: 1rem;
             background: linear-gradient(135deg, #fff 0%, #00D4FF 50%, #E91E8C 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
+
         .tagline {
-            font-size: clamp(1.5rem, 3vw, 2.5rem);
-            font-weight: 700;
-            color: #FFE53B;
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(1.2rem, 3vw, 2rem);
+            font-weight: 800;
+            color: var(--yellow);
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             margin-bottom: 2rem;
         }
-        
+
         .hero-description {
-            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            font-size: clamp(1rem, 2vw, 1.3rem);
             line-height: 1.8;
             max-width: 800px;
             margin: 0 auto 3rem;
-            color: rgba(255, 255, 255, 0.9);
+            color: rgba(255,255,255,0.88);
         }
-        
+
         .schedule-badge {
             display: inline-block;
             padding: 0.8rem 2rem;
-            background: rgba(255, 229, 59, 0.2);
+            background: rgba(255,229,59,0.15);
             backdrop-filter: blur(10px);
-            border: 2px solid #FFE53B;
+            border: 2px solid var(--yellow);
             border-radius: 50px;
-            color: #FFE53B;
+            color: var(--yellow);
             font-weight: 700;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin: 2rem 0;
             animation: pulse 2s ease-in-out infinite;
         }
-        
+
         @keyframes pulse {
-            0%, 100% { box-shadow: 0 0 20px rgba(255, 229, 59, 0.5); }
-            50% { box-shadow: 0 0 40px rgba(255, 229, 59, 0.8); }
+            0%, 100% { box-shadow: 0 0 20px rgba(255,229,59,0.4); }
+            50% { box-shadow: 0 0 40px rgba(255,229,59,0.8); }
         }
-        
-        .cta-group {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
+
+        .cta-group { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
+
         .btn {
-            padding: 1.2rem 3rem;
+            padding: 1.1rem 2.8rem;
             border: none;
             border-radius: 50px;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.3s;
             text-decoration: none;
             display: inline-block;
+            font-family: 'DM Sans', sans-serif;
         }
-        
-        .btn-primary {
-            background: linear-gradient(135deg, #6B2C91, #E91E8C);
-            color: white;
-        }
-        
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 20px 40px rgba(233, 30, 140, 0.4);
-        }
-        
+
+        .btn-primary { background: linear-gradient(135deg, #6B2C91, #E91E8C); color: white; }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 20px 40px rgba(233,30,140,0.4); }
+
         .btn-secondary {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255,255,255,0.1);
             color: white;
-            border: 2px solid rgba(255, 255, 255, 0.3);
+            border: 2px solid rgba(255,255,255,0.3);
             backdrop-filter: blur(10px);
         }
-        
-        .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.2);
-            border-color: rgba(255, 255, 255, 0.5);
-            transform: translateY(-3px);
-        }
-        
-        .section {
-            padding: 4rem 2rem;
-            position: relative;
-        }
-        
-        .section-dark {
-            background: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(20px);
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
+        .btn-secondary:hover { background: rgba(255,255,255,0.2); border-color: rgba(255,255,255,0.5); transform: translateY(-3px); }
+
+        /* SECTIONS */
+        .section { padding: 5rem 2rem; position: relative; }
+        .section-dark { background: rgba(0,0,0,0.5); backdrop-filter: blur(20px); }
+
+        .container { max-width: 1200px; margin: 0 auto; }
+
         .section-title {
-            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
             font-weight: 900;
             text-align: center;
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
             background: linear-gradient(135deg, #fff, #00D4FF);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
-        .section-subtitle {
-            text-align: center;
-            font-size: 1.3rem;
-            color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 2rem;
-        }
-        
-        .about-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
+
+        .section-subtitle { text-align: center; font-size: 1.1rem; color: rgba(255,255,255,0.65); margin-bottom: 3rem; }
+
+        /* ABOUT */
+        .about-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+
         .about-card {
-            background: rgba(255, 255, 255, 0.05);
+            background: var(--glass);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--glass-border);
             border-radius: 20px;
             padding: 2rem;
             transition: all 0.3s;
         }
-        
-        .about-card:hover {
-            transform: translateY(-10px);
-            background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(255, 255, 255, 0.3);
-        }
-        
-        .about-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 0.75rem;
-            color: #00D4FF;
-        }
-        
-        .about-card p {
-            line-height: 1.7;
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 1rem;
-        }
-        
-        .platforms-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-        
+        .about-card:hover { transform: translateY(-8px); background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.25); }
+        .about-card h3 { font-family: 'Syne', sans-serif; font-size: 1.3rem; margin-bottom: 0.75rem; color: var(--cyan); }
+        .about-card p { line-height: 1.75; color: rgba(255,255,255,0.8); font-size: 0.95rem; }
+
+        /* PLATFORMS */
+        .platforms-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
+
         .platform-card {
-            background: rgba(255, 255, 255, 0.08);
+            background: var(--glass);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            border: 1px solid var(--glass-border);
             border-radius: 15px;
             padding: 1.5rem 1rem;
             text-align: center;
@@ -338,160 +248,210 @@
             flex-direction: column;
             align-items: center;
             gap: 0.75rem;
+            font-weight: 600;
+            font-size: 0.9rem;
         }
-        
-        .platform-card:hover {
-            transform: translateY(-8px) scale(1.05);
-            background: rgba(255, 255, 255, 0.15);
-            border-color: rgba(255, 255, 255, 0.3);
-            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.3);
-        }
-        
-        .platform-icon {
-            width: 50px;
-            height: 50px;
-        }
-        
-        .newsletter-box {
-            background: linear-gradient(135deg, rgba(107, 44, 145, 0.3), rgba(233, 30, 140, 0.3));
-            backdrop-filter: blur(20px);
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            border-radius: 30px;
-            padding: 4rem 3rem;
-            text-align: center;
-            margin: 4rem auto;
-            max-width: 800px;
-        }
-        
-        .newsletter-box h3 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .newsletter-box p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            color: rgba(255, 255, 255, 0.9);
-        }
-        
-        .newsletter-embed {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 2rem;
-            border-radius: 15px;
+        .platform-card:hover { transform: translateY(-8px) scale(1.05); background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.3); box-shadow: 0 20px 40px rgba(0,212,255,0.25); }
+        .platform-icon { width: 48px; height: 48px; }
+
+        /* ===== EPISODES SECTION ===== */
+        #episodes { background: rgba(0,0,0,0.6); backdrop-filter: blur(20px); }
+
+        .episodes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 1.5rem;
             margin-top: 2rem;
         }
-        
+
+        .episode-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 18px;
+            overflow: hidden;
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        .episode-card:hover { transform: translateY(-6px); border-color: rgba(0,212,255,0.4); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+
+        .episode-header {
+            padding: 1.5rem 1.5rem 1rem;
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .episode-num {
+            font-family: 'Syne', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: var(--cyan);
+            background: rgba(0,212,255,0.12);
+            border: 1px solid rgba(0,212,255,0.3);
+            border-radius: 8px;
+            padding: 0.3rem 0.6rem;
+            white-space: nowrap;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+
+        .episode-meta { flex: 1; min-width: 0; }
+
+        .episode-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 1rem;
+            font-weight: 800;
+            line-height: 1.35;
+            color: #fff;
+            margin-bottom: 0.4rem;
+        }
+
+        .episode-date {
+            font-size: 0.78rem;
+            color: rgba(255,255,255,0.45);
+            font-weight: 500;
+        }
+
+        .episode-player {
+            padding: 0 1.5rem 1.5rem;
+            margin-top: auto;
+        }
+
+        /* Custom audio player */
+        .player-wrap {
+            background: rgba(0,0,0,0.4);
+            border-radius: 12px;
+            padding: 0.9rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .play-btn {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--purple), var(--pink));
+            border: none;
+            cursor: pointer;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .play-btn:hover { transform: scale(1.1); box-shadow: 0 0 20px rgba(233,30,140,0.5); }
+        .play-btn svg { width: 14px; height: 14px; fill: #fff; margin-left: 2px; }
+        .play-btn.playing svg { margin-left: 0; }
+
+        .progress-wrap { flex: 1; display: flex; flex-direction: column; gap: 0.35rem; min-width: 0; }
+
+        .progress-bar-outer {
+            width: 100%;
+            height: 4px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--cyan), var(--pink));
+            border-radius: 4px;
+            width: 0%;
+            transition: width 0.1s linear;
+            pointer-events: none;
+        }
+
+        .time-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.68rem;
+            color: rgba(255,255,255,0.4);
+            font-weight: 500;
+        }
+
+        /* loading state */
+        .episodes-loading {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: rgba(255,255,255,0.5);
+            font-size: 1.1rem;
+        }
+        .episodes-loading .spinner {
+            width: 40px; height: 40px;
+            border: 3px solid rgba(255,255,255,0.1);
+            border-top-color: var(--cyan);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* NEWSLETTER */
+        .newsletter-box {
+            background: linear-gradient(135deg, rgba(107,44,145,0.3), rgba(233,30,140,0.3));
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(255,255,255,0.18);
+            border-radius: 28px;
+            padding: 4rem 3rem;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 780px;
+        }
+        .newsletter-box h3 { font-family: 'Syne', sans-serif; font-size: 2.2rem; margin-bottom: 1rem; }
+        .newsletter-box p { font-size: 1.1rem; margin-bottom: 2rem; color: rgba(255,255,255,0.88); line-height: 1.7; }
+
+        /* FOOTER */
         footer {
             background: #000;
-            border-top: 2px solid rgba(0, 212, 255, 0.3);
+            border-top: 2px solid rgba(0,212,255,0.25);
             padding: 4rem 2rem 2rem;
             margin-top: auto;
         }
-        
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
+        .footer-content { max-width: 1200px; margin: 0 auto; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2.5rem; margin-bottom: 3rem; }
+        .footer-column h4 { color: var(--cyan); font-family: 'Syne', sans-serif; font-size: 1rem; margin-bottom: 1.2rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
+        .footer-column ul { list-style: none; }
+        .footer-column ul li { margin-bottom: 0.85rem; }
+        .footer-column a { color: rgba(255,255,255,0.75); text-decoration: none; transition: all 0.3s; font-size: 0.95rem; }
+        .footer-column a:hover { color: var(--pink); padding-left: 4px; }
+        .footer-column p { color: rgba(255,255,255,0.65); line-height: 1.6; margin-bottom: 0.75rem; font-size: 0.95rem; }
+        .footer-logo { font-family: 'Syne', sans-serif; font-size: 1.6rem; font-weight: 900; background: linear-gradient(135deg, #00D4FF, #E91E8C); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1rem; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.15); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
+        .footer-bottom-left p { color: rgba(255,255,255,0.6); font-size: 0.9rem; margin-bottom: 0.4rem; }
+        .footer-bottom-right { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+        .footer-bottom-right a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.85rem; transition: color 0.3s; }
+        .footer-bottom-right a:hover { color: var(--cyan); }
+
+        /* DISCLAIMER BOX */
+        .disclaimer-box {
+            background: rgba(233,30,140,0.15);
+            border: 2px solid var(--pink);
+            border-radius: 14px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 2.5rem;
+            text-align: center;
         }
-        
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-            margin-bottom: 3rem;
-            text-align: left;
-        }
-        
-        .footer-column h4 {
-            color: #00D4FF;
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .footer-column ul {
-            list-style: none;
-        }
-        
-        .footer-column ul li {
-            margin-bottom: 1rem;
-        }
-        
-        .footer-column a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            transition: all 0.3s;
-            font-size: 1rem;
-        }
-        
-        .footer-column a:hover {
-            color: #E91E8C;
-            padding-left: 5px;
-        }
-        
-        .footer-column p {
-            color: rgba(255, 255, 255, 0.7);
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-        
-        .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            padding-top: 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-        
-        .footer-bottom-left p {
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.95rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .footer-bottom-right {
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-        
-        .footer-bottom-right a {
-            color: rgba(255, 255, 255, 0.7);
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-        
-        .footer-bottom-right a:hover {
-            color: #00D4FF;
-        }
-        
-        .footer-logo {
-            font-size: 1.8rem;
-            font-weight: 900;
-            background: linear-gradient(135deg, #00D4FF, #E91E8C);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 1rem;
-        }
-        
+        .disclaimer-box p { font-size: 1rem; font-weight: 600; color: var(--yellow); }
+
         @media (max-width: 768px) {
             .nav-links { display: none; }
             .cta-group { flex-direction: column; }
             .hero { padding: 6rem 1.5rem 3rem; }
-            .section { padding: 4rem 1.5rem; }
+            .section { padding: 3.5rem 1.5rem; }
             .footer-grid { grid-template-columns: 1fr; }
             .footer-bottom { flex-direction: column; text-align: center; }
+            .newsletter-box { padding: 2.5rem 1.5rem; }
+            .episodes-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
     <div class="animated-bg"></div>
-    
+
     <main>
         <nav>
             <div class="nav-content">
@@ -499,12 +459,14 @@
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#episodes">Episodes</a></li>
                     <li><a href="#listen">Listen</a></li>
                     <li><a href="#newsletter">Newsletter</a></li>
                 </ul>
             </div>
         </nav>
-        
+
+        <!-- HERO -->
         <section id="home" class="hero">
             <div class="hero-content">
                 <h1>CARIBBEAN<br>CHRONICLES<br>BY JOS</h1>
@@ -514,32 +476,31 @@
                     A weekly podcast exploring the stories, culture, and conversations shaping the Caribbean and its global impact.
                 </p>
                 <div class="cta-group">
-                    <a href="#listen" class="btn btn-primary">Listen Now</a>
+                    <a href="#episodes" class="btn btn-primary">Listen Now</a>
                     <a href="#newsletter" class="btn btn-secondary">Get The Newsletter</a>
                 </div>
             </div>
         </section>
-        
+
+        <!-- ABOUT -->
         <section id="about" class="section section-dark">
             <div class="container">
                 <h2 class="section-title">About Caribbean Chronicles by JOS</h2>
                 <p class="section-subtitle">A JOS Productions™ Platform</p>
-                
-                <div style="background: rgba(233, 30, 140, 0.2); border: 2px solid #E91E8C; border-radius: 15px; padding: 1.5rem; margin-bottom: 2rem; text-align: center;">
-                    <p style="font-size: 1.1rem; font-weight: 600; color: #FFE53B;">Caribbean Chronicles by JOS is produced by JOS Productions™ and is not affiliated with, endorsed by, or partnered with any other organizations, including Island SPACE or any other entities.</p>
+
+                <div class="disclaimer-box">
+                    <p>Caribbean Chronicles by JOS is produced by JOS Productions™ and is not affiliated with, endorsed by, or partnered with any other organizations, including Island SPACE or any other entities.</p>
                 </div>
-                
+
                 <div class="about-grid">
                     <div class="about-card">
                         <h3>🎯 Our Mission</h3>
                         <p>Our mission is to create a space where Caribbean people and the diaspora can learn, connect, and see themselves reflected. Through our newsletter and podcast, we share stories, insights, and conversations that strengthen our collective voice.</p>
                     </div>
-                    
                     <div class="about-card">
                         <h3>🎙️ The Podcast</h3>
-                        <p>Caribbean Chronicles by JOS is a weekly podcast exploring the stories, culture, and conversations shaping the Caribbean and its global impact. Through honest dialogue, analysis, and storytelling, we highlight the voices and ideas moving the region forward. Available on Spotify, Apple Podcasts, YouTube, Pandora, and iHeartRadio.</p>
+                        <p>Caribbean Chronicles by JOS is a weekly podcast exploring the stories, culture, and conversations shaping the Caribbean and its global impact. Through honest dialogue, analysis, and storytelling, we highlight the voices and ideas moving the region forward.</p>
                     </div>
-                    
                     <div class="about-card">
                         <h3>📰 The Newsletter</h3>
                         <p>A weekly newsletter exploring the stories, ideas, and cultural shifts shaping the Caribbean and its global influence. Delivered every Tuesday on Beehiiv and LinkedIn.</p>
@@ -547,33 +508,44 @@
                 </div>
             </div>
         </section>
-        
-        <section id="listen" class="section">
+
+        <!-- EPISODES (live RSS) -->
+        <section id="episodes" class="section">
+            <div class="container">
+                <h2 class="section-title">Latest Episodes</h2>
+                <p class="section-subtitle">Stream directly — new episodes every Wednesday</p>
+                <div id="episodes-container">
+                    <div class="episodes-loading">
+                        <div class="spinner"></div>
+                        Loading episodes…
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LISTEN EVERYWHERE -->
+        <section id="listen" class="section section-dark">
             <div class="container">
                 <h2 class="section-title">Listen Everywhere</h2>
                 <p class="section-subtitle">Stream on your favorite platform</p>
-                
+
                 <div class="platforms-grid">
                     <a href="https://open.spotify.com/show/0WqIBDQ7668WrpvQtxvQvS" target="_blank" class="platform-card">
                         <svg class="platform-icon" viewBox="0 0 24 24" fill="#1DB954"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
                         <span>Spotify</span>
                     </a>
-                    
                     <a href="https://podcasts.apple.com/us/podcast/caribbean-chronicles-by-jos/id1868050854" target="_blank" class="platform-card">
                         <svg class="platform-icon" viewBox="0 0 24 24" fill="#A259FF"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2.182c5.423 0 9.818 4.395 9.818 9.818S17.423 21.818 12 21.818 2.182 17.423 2.182 12 6.577 2.182 12 2.182zm0 3.927c-3.251 0-5.891 2.64-5.891 5.891s2.64 5.891 5.891 5.891 5.891-2.64 5.891-5.891-2.64-5.891-5.891-5.891zm0 1.964c2.167 0 3.927 1.76 3.927 3.927S14.167 15.927 12 15.927 8.073 14.167 8.073 12 9.833 8.073 12 8.073zm0 2.182c-.963 0-1.745.782-1.745 1.745s.782 1.745 1.745 1.745 1.745-.782 1.745-1.745-.782-1.745-1.745-1.745z"/></svg>
                         <span>Apple Podcasts</span>
                     </a>
-                    
                     <a href="https://www.youtube.com/@JosProductions1" target="_blank" class="platform-card">
                         <svg class="platform-icon" viewBox="0 0 24 24" fill="#FF0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                         <span>YouTube</span>
                     </a>
-                    
                     <a href="https://www.pandora.com/podcast/caribbean-chronicles-by-jos/PC:1001112611" target="_blank" class="platform-card">
                         <svg class="platform-icon" viewBox="0 0 24 24" fill="#3668FF"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.892 17.203c0 .567-.459 1.026-1.026 1.026H7.134c-.567 0-1.026-.459-1.026-1.026V6.797c0-.567.459-1.026 1.026-1.026h3.447c3.447 0 6.285 2.838 6.285 6.285v5.147z"/></svg>
                         <span>Pandora</span>
                     </a>
-                    
                     <a href="https://www.iheart.com/podcast/269-caribbean-chronicles-by-jo-315780799/" target="_blank" class="platform-card">
                         <svg class="platform-icon" viewBox="0 0 24 24" fill="#C6002B"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
                         <span>iHeartRadio</span>
@@ -581,30 +553,28 @@
                 </div>
             </div>
         </section>
-        
+
+        <!-- NEWSLETTER -->
         <section id="newsletter" class="section section-dark">
             <div class="container">
                 <div class="newsletter-box">
                     <h3>📰 Join The Community</h3>
                     <p>A weekly newsletter exploring the stories, ideas, and cultural shifts shaping the Caribbean and its global influence. Delivered every Tuesday.</p>
-                    <div class="newsletter-embed">
-                        <a href="https://jos-newsletter-7b9791.beehiiv.com/subscribe" target="_blank" class="btn btn-primary" style="display: inline-block; margin-top: 1rem;">Subscribe to Newsletter</a>
-                    </div>
+                    <a href="https://jos-newsletter-7b9791.beehiiv.com/subscribe" target="_blank" class="btn btn-primary">Subscribe to Newsletter</a>
                 </div>
             </div>
         </section>
     </main>
-    
+
     <footer>
         <div class="footer-content">
             <div class="footer-grid">
                 <div class="footer-column">
                     <div class="footer-logo">CARIBBEAN CHRONICLES BY JOS</div>
                     <p>A podcast and newsletter platform highlighting Caribbean innovators, artists, and leaders. Connecting the Caribbean diaspora and amplifying local talent globally.</p>
-                    <p style="color: #FFE53B; font-weight: 600; margin-top: 1rem;">🎙️ Podcast: Wednesdays @ 8am EST</p>
-                    <p style="color: #E91E8C; font-weight: 600;">📰 Newsletter: Tuesdays on Beehiiv & LinkedIn</p>
+                    <p style="color:#FFE53B;font-weight:700;margin-top:1rem;">🎙️ Podcast: Wednesdays @ 8am EST</p>
+                    <p style="color:#E91E8C;font-weight:700;">📰 Newsletter: Tuesdays on Beehiiv & LinkedIn</p>
                 </div>
-                
                 <div class="footer-column">
                     <h4>Podcast</h4>
                     <ul>
@@ -616,21 +586,19 @@
                         <li><a href="https://www.iheart.com/podcast/269-caribbean-chronicles-by-jo-315780799/" target="_blank">iHeartRadio</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer-column">
                     <h4>Newsletter</h4>
                     <ul>
                         <li><a href="#newsletter">Subscribe</a></li>
                         <li><a href="https://jos-newsletter-7b9791.beehiiv.com/" target="_blank">Newsletter Archive</a></li>
                     </ul>
-                    <h4 style="margin-top: 2rem;">Business</h4>
+                    <h4 style="margin-top:2rem;">Business</h4>
                     <ul>
                         <li><a href="mailto:advertise@josproductions.com">Advertise With Us</a></li>
                         <li><a href="mailto:partnerships@josproductions.com">Partnerships</a></li>
                         <li><a href="mailto:hello@josproductions.com">Contact</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer-column">
                     <h4>Legal</h4>
                     <ul>
@@ -640,12 +608,11 @@
                     </ul>
                 </div>
             </div>
-            
             <div class="footer-bottom">
                 <div class="footer-bottom-left">
                     <p><strong>&copy; 2026 Caribbean Chronicles by JOS. All rights reserved.</strong></p>
                     <p>A JOS Productions™ Company | Pushing The Culture Forward</p>
-                    <p style="font-size: 0.85rem; margin-top: 0.5rem;">Caribbean Chronicles by JOS is produced by JOS Productions and is not affiliated with or endorsed by any other organizations.</p>
+                    <p style="font-size:0.82rem;margin-top:0.4rem;">Caribbean Chronicles by JOS is produced by JOS Productions and is not affiliated with or endorsed by any other organizations.</p>
                 </div>
                 <div class="footer-bottom-right">
                     <a href="https://josmedia.github.io/privacy.html">Privacy</a>
@@ -656,5 +623,166 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    // ── RSS → Episode Cards with Custom Audio Player ──────────────────────────
+
+    const RSS_URL = 'https://api2.wondercraft.ai/feeds/podcasts/9d2ab782-aff2-4aca-b4f8-081ab7b27c67.rss';
+    const PROXY   = 'https://api.allorigins.win/get?url=';
+
+    let currentAudio = null;
+    let currentBtn   = null;
+
+    function formatDate(str) {
+        const d = new Date(str);
+        return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    }
+
+    function formatTime(secs) {
+        if (isNaN(secs)) return '0:00';
+        const m = Math.floor(secs / 60);
+        const s = Math.floor(secs % 60).toString().padStart(2, '0');
+        return `${m}:${s}`;
+    }
+
+    function playIcon() {
+        return `<svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>`;
+    }
+    function pauseIcon() {
+        return `<svg viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>`;
+    }
+
+    function buildCard(ep, idx) {
+        const card = document.createElement('div');
+        card.className = 'episode-card';
+
+        const audioUrl  = ep.audioUrl;
+        const cardId    = `ep-${idx}`;
+
+        card.innerHTML = `
+            <div class="episode-header">
+                <span class="episode-num">EP ${ep.epNum || (idx + 1)}</span>
+                <div class="episode-meta">
+                    <div class="episode-title">${ep.title}</div>
+                    <div class="episode-date">${formatDate(ep.pubDate)}</div>
+                </div>
+            </div>
+            <div class="episode-player">
+                <div class="player-wrap">
+                    <button class="play-btn" id="btn-${cardId}" aria-label="Play ${ep.title}">
+                        ${playIcon()}
+                    </button>
+                    <div class="progress-wrap">
+                        <div class="progress-bar-outer" id="bar-${cardId}">
+                            <div class="progress-bar-fill" id="fill-${cardId}"></div>
+                        </div>
+                        <div class="time-row">
+                            <span id="cur-${cardId}">0:00</span>
+                            <span id="dur-${cardId}">—</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        const btn  = card.querySelector(`#btn-${cardId}`);
+        const bar  = card.querySelector(`#bar-${cardId}`);
+        const fill = card.querySelector(`#fill-${cardId}`);
+        const cur  = card.querySelector(`#cur-${cardId}`);
+        const dur  = card.querySelector(`#dur-${cardId}`);
+
+        let audio = null;
+
+        function initAudio() {
+            if (audio) return;
+            audio = new Audio(audioUrl);
+            audio.addEventListener('loadedmetadata', () => { dur.textContent = formatTime(audio.duration); });
+            audio.addEventListener('timeupdate', () => {
+                if (!audio.duration) return;
+                const pct = (audio.currentTime / audio.duration) * 100;
+                fill.style.width = pct + '%';
+                cur.textContent  = formatTime(audio.currentTime);
+            });
+            audio.addEventListener('ended', () => {
+                btn.innerHTML = playIcon();
+                btn.classList.remove('playing');
+                fill.style.width = '0%';
+                cur.textContent  = '0:00';
+                currentAudio = null;
+                currentBtn   = null;
+            });
+        }
+
+        btn.addEventListener('click', () => {
+            initAudio();
+            if (currentAudio && currentAudio !== audio) {
+                currentAudio.pause();
+                currentBtn.innerHTML = playIcon();
+                currentBtn.classList.remove('playing');
+            }
+            if (audio.paused) {
+                audio.play();
+                btn.innerHTML = pauseIcon();
+                btn.classList.add('playing');
+                currentAudio = audio;
+                currentBtn   = btn;
+            } else {
+                audio.pause();
+                btn.innerHTML = playIcon();
+                btn.classList.remove('playing');
+                currentAudio = null;
+                currentBtn   = null;
+            }
+        });
+
+        bar.addEventListener('click', (e) => {
+            initAudio();
+            const rect = bar.getBoundingClientRect();
+            const pct  = (e.clientX - rect.left) / rect.width;
+            if (audio.duration) audio.currentTime = pct * audio.duration;
+        });
+
+        return card;
+    }
+
+    async function loadEpisodes() {
+        const container = document.getElementById('episodes-container');
+        try {
+            const res  = await fetch(PROXY + encodeURIComponent(RSS_URL));
+            const data = await res.json();
+            const parser = new DOMParser();
+            const xml    = parser.parseFromString(data.contents, 'text/xml');
+            const items  = Array.from(xml.querySelectorAll('item'));
+
+            if (!items.length) throw new Error('No episodes found');
+
+            const episodes = items.map(item => ({
+                title:    item.querySelector('title')?.textContent || 'Untitled',
+                pubDate:  item.querySelector('pubDate')?.textContent || '',
+                audioUrl: item.querySelector('enclosure')?.getAttribute('url') || '',
+                epNum:    item.querySelector('episode')?.textContent || '',
+            }));
+
+            container.innerHTML = '';
+            const grid = document.createElement('div');
+            grid.className = 'episodes-grid';
+
+            episodes.forEach((ep, i) => {
+                if (ep.audioUrl) grid.appendChild(buildCard(ep, i));
+            });
+
+            container.appendChild(grid);
+
+        } catch (err) {
+            container.innerHTML = `
+                <div class="episodes-loading">
+                    <p>Couldn't load episodes right now.</p>
+                    <p style="margin-top:0.5rem;font-size:0.9rem;">Listen on <a href="https://open.spotify.com/show/0WqIBDQ7668WrpvQtxvQvS" style="color:#00D4FF;">Spotify</a> or <a href="https://podcasts.apple.com/us/podcast/caribbean-chronicles-by-jos/id1868050854" style="color:#00D4FF;">Apple Podcasts</a>.</p>
+                </div>`;
+        }
+    }
+
+    loadEpisodes();
+    </script>
 </body>
 </html>
