@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Kit | Caribbean Chronicles by JOS | JOS Productions</title>
+  <meta name="description" content="Partner with Caribbean Chronicles by JOS. Reach a Caribbean and diaspora audience through podcast sponsorships, newsletter placements, and content collaborations.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://josproductions.com/media-kit.html">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#080810;--ink2:#0f0f1a;--cyan:#00c8f0;--pink:#e8186d;--gold:#f0b429;--mint:#4ddba4;--white:#fff;--muted:rgba(255,255,255,.52);--border:rgba(255,255,255,.08);--glass:rgba(255,255,255,.04);--glass2:rgba(255,255,255,.07);--r:14px;--r-lg:22px}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',sans-serif;background:var(--ink);color:var(--white);overflow-x:hidden}
+    body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 70% 55% at 5% 15%,rgba(0,200,240,.10) 0%,transparent 60%),radial-gradient(ellipse 55% 45% at 95% 85%,rgba(232,24,109,.09) 0%,transparent 55%)}
+    *{position:relative;z-index:1}
+
+    nav{position:fixed;top:0;left:0;right:0;z-index:200;height:60px;padding:0 2rem;display:flex;align-items:center;background:rgba(8,8,16,.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+    .nav-inner{max-width:1200px;margin:0 auto;width:100%;display:flex;justify-content:space-between;align-items:center}
+    .nav-logo{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;background:linear-gradient(120deg,var(--cyan),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-decoration:none}
+    .nav-back{font-size:.82rem;color:var(--muted);text-decoration:none;transition:color .2s}
+    .nav-back:hover{color:var(--white)}
+
+    .hero{padding:120px 2rem 5rem;text-align:center}
+    .hero-inner{max-width:800px;margin:0 auto}
+    .hero-badge{display:inline-flex;align-items:center;gap:.45rem;font-size:.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(240,180,41,.1);border:1px solid rgba(240,180,41,.25);padding:.3rem .8rem;border-radius:50px;margin-bottom:1.5rem}
+    h1{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:900;line-height:1.08;letter-spacing:-1px;margin-bottom:1.25rem}
+    h1 em{font-style:italic;background:linear-gradient(120deg,var(--cyan),var(--mint));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .hero-desc{font-size:1.05rem;line-height:1.8;color:rgba(255,255,255,.68);max-width:600px;margin:0 auto 2.5rem}
+
+    .btn{padding:.7rem 1.6rem;border-radius:10px;border:none;font-size:.88rem;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block;transition:all .2s;font-family:'Inter',sans-serif}
+    .btn-primary{background:linear-gradient(135deg,var(--pink),#a01050);color:#fff}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(232,24,109,.35)}
+    .btn-outline{background:transparent;color:var(--white);border:1px solid rgba(255,255,255,.2)}
+    .btn-outline:hover{background:var(--glass2);border-color:rgba(255,255,255,.35);transform:translateY(-2px)}
+
+    section{padding:4rem 2rem}
+    .container{max-width:1100px;margin:0 auto}
+    .section-label{font-size:.7rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--cyan);margin-bottom:.6rem}
+    .section-title{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:900;line-height:1.15;margin-bottom:.75rem;letter-spacing:-.3px}
+    .section-title em{font-style:italic;background:linear-gradient(120deg,var(--cyan),var(--mint));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .divider{height:1px;background:var(--border)}
+
+    /* STATS */
+    .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-top:2.5rem}
+    .stat-card{background:var(--glass2);border:1px solid var(--border);border-radius:var(--r-lg);padding:1.75rem 1.5rem;text-align:center}
+    .stat-card .num{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:900;background:linear-gradient(135deg,var(--cyan),var(--mint));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.3rem}
+    .stat-card .label{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+
+    /* ABOUT */
+    #about-section{background:var(--ink2)}
+    .about-2col{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:2rem;align-items:start}
+    .about-2col p{font-size:.96rem;line-height:1.82;color:rgba(255,255,255,.72);margin-bottom:1rem}
+    .about-2col strong{color:var(--white)}
+    .audience-pills{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
+    .pill{padding:.35rem .9rem;border-radius:50px;font-size:.78rem;font-weight:600;border:1px solid var(--border);background:var(--glass2);color:rgba(255,255,255,.75)}
+
+    /* PACKAGES */
+    #packages{background:var(--ink)}
+    .packages-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem;margin-top:2.5rem}
+    .pkg-card{background:var(--glass2);border:1px solid var(--border);border-radius:var(--r-lg);padding:1.75rem;transition:all .25s}
+    .pkg-card:hover{border-color:rgba(0,200,240,.3);transform:translateY(-3px)}
+    .pkg-card.featured{border-color:rgba(232,24,109,.35);background:rgba(232,24,109,.07)}
+    .pkg-label{display:inline-block;font-size:.65rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:.2rem .6rem;border-radius:4px;margin-bottom:.75rem}
+    .pkg-label.a{background:rgba(0,200,240,.15);color:var(--cyan)}
+    .pkg-label.b{background:rgba(77,219,164,.15);color:var(--mint)}
+    .pkg-label.c{background:rgba(240,180,41,.15);color:var(--gold)}
+    .pkg-label.d{background:rgba(232,24,109,.15);color:var(--pink)}
+    .pkg-label.e{background:rgba(185,117,240,.15);color:#b975f0}
+    .pkg-title{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:900;margin-bottom:.6rem}
+    .pkg-desc{font-size:.85rem;color:var(--muted);line-height:1.65;margin-bottom:1rem}
+    .pkg-includes{list-style:none;display:flex;flex-direction:column;gap:.4rem}
+    .pkg-includes li{font-size:.82rem;color:rgba(255,255,255,.7);display:flex;gap:.5rem;align-items:flex-start}
+    .pkg-includes li::before{content:'✓';color:var(--mint);font-weight:700;flex-shrink:0}
+
+    /* TESTIMONIALS */
+    #testimonials{background:var(--ink2)}
+    .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem;margin-top:2.5rem}
+    .testimonial{background:var(--glass2);border:1px solid var(--border);border-radius:var(--r-lg);padding:1.5rem}
+    .testimonial blockquote{font-size:.95rem;line-height:1.7;color:rgba(255,255,255,.82);font-style:italic;margin-bottom:.75rem}
+    .testimonial-attr{font-size:.78rem;color:var(--muted)}
+
+    /* WHY */
+    #why{background:var(--ink)}
+    .why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.1rem;margin-top:2.5rem}
+    .why-item{background:var(--glass2);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem 1.4rem}
+    .why-item .icon{font-size:1.5rem;margin-bottom:.5rem}
+    .why-item h4{font-size:.9rem;font-weight:700;color:var(--white);margin-bottom:.35rem}
+    .why-item p{font-size:.82rem;color:var(--muted);line-height:1.6}
+
+    /* CTA */
+    #cta-section{background:var(--ink2)}
+    .cta-box{background:linear-gradient(135deg,rgba(232,24,109,.12),rgba(107,44,145,.12));border:1px solid rgba(232,24,109,.22);border-radius:var(--r-lg);padding:3.5rem 2.5rem;text-align:center;max-width:700px;margin:2.5rem auto 0}
+    .cta-box h2{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;margin-bottom:.75rem}
+    .cta-box p{font-size:.95rem;color:var(--muted);line-height:1.7;margin-bottom:1.75rem;max-width:480px;margin-left:auto;margin-right:auto}
+    .cta-contacts{display:flex;flex-direction:column;gap:.5rem;margin-top:1.5rem}
+    .cta-contact-row{font-size:.88rem;color:rgba(255,255,255,.65)}
+    .cta-contact-row a{color:var(--cyan);text-decoration:none}
+    .cta-contact-row a:hover{text-decoration:underline}
+
+    footer{background:#000;border-top:1px solid var(--border);padding:2rem;text-align:center}
+    footer p{font-size:.8rem;color:rgba(255,255,255,.3)}
+    footer a{color:rgba(255,255,255,.4);text-decoration:none}
+    footer a:hover{color:var(--muted)}
+
+    @media(max-width:768px){
+      .stats-row{grid-template-columns:repeat(2,1fr)}
+      .about-2col{grid-template-columns:1fr}
+      .cta-box{padding:2.5rem 1.5rem}
+    }
+    @media(max-width:480px){
+      .stats-row{grid-template-columns:1fr 1fr}
+      section{padding:3rem 1.25rem}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Caribbean Chronicles by JOS</a>
+    <a href="index.html" class="nav-back">← Back to site</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">📋 Media Kit 2026</div>
+    <h1>Partner with<br><em>Caribbean Chronicles</em></h1>
+    <p class="hero-desc">Reach an engaged Caribbean and diaspora audience through authentic storytelling across podcast, newsletter, and digital content. Produced by JOS Productions.</p>
+    <div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap">
+      <a href="/cdn-cgi/l/email-protection#0c6d687a697e78657f694c66637f7c7e6368796f786563627f226f6361" class="btn btn-primary">Get in Touch</a>
+      <a href="/cdn-cgi/l/email-protection#70001102041e15020318190003301a1f0300021f14051304191f1e035e131f1d" class="btn btn-outline">Partnerships</a>
+    </div>
+  </div>
+</div>
+<div class="divider"></div>
+
+<!-- REACH -->
+<section id="reach">
+  <div class="container">
+    <p class="section-label">Our Reach</p>
+    <h2 class="section-title">A growing <em>Caribbean audience</em></h2>
+    <div class="stats-row">
+      <div class="stat-card"><div class="num">13+</div><div class="label">Episodes Published</div></div>
+      <div class="stat-card"><div class="num">5</div><div class="label">Major Platforms</div></div>
+      <div class="stat-card"><div class="num">Weekly</div><div class="label">Newsletter Cadence</div></div>
+      <div class="stat-card"><div class="num">2026</div><div class="label">Launched &amp; Growing</div></div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="about-section">
+  <div class="container">
+    <p class="section-label">About the Platform</p>
+    <h2 class="section-title">Authentic <em>Caribbean storytelling</em></h2>
+    <div class="about-2col">
+      <div>
+        <p>Caribbean Chronicles by JOS is a storytelling platform dedicated to showcasing the depth, brilliance, and personality of the Caribbean. Through long-form podcast episodes, weekly newsletters, and bite-sized Caribbean Snack segments, we highlight the region's culture, people, innovators, and hidden gems.</p>
+        <p><strong>Hosted by LaToya</strong>, a storyteller and cultural curator who blends humor, insight, and lived experience to spotlight the Caribbean beyond clichés — giving global audiences the "I didn't know I needed this" experience every time.</p>
+        <p>We don't just promote the Caribbean — we are a product of the region.</p>
+      </div>
+      <div>
+        <p><strong>Our audience is:</strong></p>
+        <div class="audience-pills">
+          <span class="pill">Caribbean diaspora</span>
+          <span class="pill">Travel-curious</span>
+          <span class="pill">Culture enthusiasts</span>
+          <span class="pill">Entrepreneurs</span>
+          <span class="pill">Fintech professionals</span>
+          <span class="pill">Tech innovators</span>
+          <span class="pill">Caribbean-rooted</span>
+          <span class="pill">Globally connected</span>
+          <span class="pill">25–45 age range</span>
+          <span class="pill">English-speaking</span>
+        </div>
+        <p style="margin-top:1.25rem">Available on <strong>Spotify, Apple Podcasts, YouTube, Pandora,</strong> and <strong>iHeartRadio</strong>, with newsletter distribution via <strong>Beehiiv</strong> and <strong>LinkedIn</strong>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- PACKAGES -->
+<section id="packages">
+  <div class="container">
+    <p class="section-label">Collaboration Packages</p>
+    <h2 class="section-title">Find the right <em>partnership</em></h2>
+    <div class="packages-grid">
+      <div class="pkg-card">
+        <span class="pkg-label a">Package A</span>
+        <div class="pkg-title">The Island Snack Feature</div>
+        <p class="pkg-desc">A short, punchy brand mention within a Caribbean Snack mini-episode. Perfect for brand awareness with a highly engaged niche audience.</p>
+        <ul class="pkg-includes">
+          <li>30-second host-read ad spot</li>
+          <li>Brand mention in episode notes</li>
+          <li>Social post tagging your brand</li>
+        </ul>
+      </div>
+      <div class="pkg-card">
+        <span class="pkg-label b">Package B</span>
+        <div class="pkg-title">The Spotlight Package</div>
+        <p class="pkg-desc">A dedicated segment in a full-length episode, positioning your brand as part of the Caribbean conversation.</p>
+        <ul class="pkg-includes">
+          <li>60-second mid-roll podcast ad</li>
+          <li>Newsletter mention (1 edition)</li>
+          <li>Link in show notes</li>
+          <li>Social media shoutout</li>
+        </ul>
+      </div>
+      <div class="pkg-card">
+        <span class="pkg-label c">Package C</span>
+        <div class="pkg-title">The Cultural Showcase</div>
+        <p class="pkg-desc">Deep-dive brand integration across podcast and newsletter — ideal for brands with a story to tell to Caribbean and diaspora audiences.</p>
+        <ul class="pkg-includes">
+          <li>Dedicated episode segment</li>
+          <li>Full newsletter feature</li>
+          <li>LinkedIn cross-post included</li>
+          <li>Multi-platform social coverage</li>
+        </ul>
+      </div>
+      <div class="pkg-card featured">
+        <span class="pkg-label d">Package D</span>
+        <div class="pkg-title">The Traveler's Tease</div>
+        <p class="pkg-desc">Tailored for travel, tourism, and lifestyle brands. Woven authentically into Caribbean destination content and stories.</p>
+        <ul class="pkg-includes">
+          <li>Destination feature segment</li>
+          <li>Caribbean Snack integration</li>
+          <li>Newsletter spotlight</li>
+          <li>Branded social content</li>
+        </ul>
+      </div>
+      <div class="pkg-card">
+        <span class="pkg-label e">Package E</span>
+        <div class="pkg-title">The Full Flavor Campaign</div>
+        <p class="pkg-desc">Our most comprehensive partnership. A multi-week campaign across all platforms — podcast, newsletter, social, and content — for maximum reach.</p>
+        <ul class="pkg-includes">
+          <li>Multi-episode integration (4 weeks)</li>
+          <li>4x newsletter features</li>
+          <li>Dedicated LinkedIn posts</li>
+          <li>Custom branded content creation</li>
+          <li>Campaign performance report</li>
+        </ul>
+      </div>
+    </div>
+    <p style="margin-top:1.5rem;font-size:.85rem;color:var(--muted);text-align:center">Custom packages available. <a href="/cdn-cgi/l/email-protection#b1d0d5c7d4c3c5d8c2d4f1dbdec2c1c3ded5c4d2c5d8dedfc29fd2dedc" style="color:var(--cyan)">Contact us</a> to discuss pricing and availability.</p>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <p class="section-label">Audience Feedback</p>
+    <h2 class="section-title">What listeners <em>are saying</em></h2>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <blockquote>"I love how you tell Caribbean stories — it feels like home."</blockquote>
+        <div class="testimonial-attr">— Listener feedback</div>
+      </div>
+      <div class="testimonial">
+        <blockquote>"Smart, funny, and full of heart — I always learn something new."</blockquote>
+        <div class="testimonial-attr">— Listener feedback</div>
+      </div>
+      <div class="testimonial">
+        <blockquote>"A refreshing take on Caribbean culture and identity."</blockquote>
+        <div class="testimonial-attr">— Listener feedback</div>
+      </div>
+      <div class="testimonial">
+        <blockquote>"This is the Caribbean storytelling we've been waiting for."</blockquote>
+        <div class="testimonial-attr">— Listener feedback</div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- WHY PARTNER -->
+<section id="why">
+  <div class="container">
+    <p class="section-label">Why Partner With Us</p>
+    <h2 class="section-title">Reach an audience <em>no one else owns</em></h2>
+    <div class="why-grid">
+      <div class="why-item"><div class="icon">🌍</div><h4>Authentic Caribbean Voice</h4><p>Rooted in culture, connected globally. We speak to the Caribbean community from the inside out.</p></div>
+      <div class="why-item"><div class="icon">🔁</div><h4>High Shareability</h4><p>Caribbean diaspora audiences are highly engaged sharers. Content resonates across continents.</p></div>
+      <div class="why-item"><div class="icon">📱</div><h4>Multi-Platform Visibility</h4><p>Podcast, newsletter, LinkedIn, and social — your brand appears across every touchpoint.</p></div>
+      <div class="why-item"><div class="icon">🎯</div><h4>Underserved Niche</h4><p>The Caribbean digital media market is underdeveloped. Early partners gain significant share of voice.</p></div>
+      <div class="why-item"><div class="icon">📈</div><h4>Growing Platform</h4><p>Early-stage means early-mover advantage. Partner now and grow with the audience.</p></div>
+      <div class="why-item"><div class="icon">🤝</div><h4>True Partnership</h4><p>We don't just run ads. We integrate brands authentically into the Caribbean conversation.</p></div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- CTA -->
+<section id="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Ready to partner?</h2>
+      <p>Let's build something meaningful together for the Caribbean and its diaspora. Reach out to discuss availability, pricing, and custom packages.</p>
+      <a href="/cdn-cgi/l/email-protection#8eefeaf8ebfcfae7fdebcee4e1fdfefce1eafbedfae7e1e0fda0ede1e3" class="btn btn-primary">Email Us Today</a>
+      <div class="cta-contacts">
+        <div class="cta-contact-row">📢 Advertising: <a href="/cdn-cgi/l/email-protection#b2d3d6c4d7c0c6dbc1d7f2d8ddc1c2c0ddd6c7d1c6dbdddcc19cd1dddf"><span class="__cf_email__" data-cfemail="8dece9fbe8fff9e4fee8cde7e2fefdffe2e9f8eef9e4e2e3fea3eee2e0">[email&#160;protected]</span></a></div>
+        <div class="cta-contact-row">🤝 Partnerships: <a href="/cdn-cgi/l/email-protection#c8b8a9babca6adbabba0a1b8bb88a2a7bbb8baa7acbdabbca1a7a6bbe6aba7a5"><span class="__cf_email__" data-cfemail="0c7c6d7e7862697e7f64657c7f4c66637f7c7e6368796f786563627f226f6361">[email&#160;protected]</span></a></div>
+        <div class="cta-contact-row">📧 General: <a href="/cdn
