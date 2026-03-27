@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Caribbean Digest | Newsletter by Caribbean Chronicles by JOS</title>
+  <meta name="description" content="A weekly newsletter exploring Caribbean culture, tech, fintech, innovation and diaspora stories. Published every Tuesday by JOS Productions.">
+  <meta name="keywords" content="Caribbean newsletter, Caribbean tech newsletter, Caribbean fintech, Caribbean culture, JOS Productions, Caribbean diaspora">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://josproductions.com/newsletter.html">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsletterService","name":"The Caribbean Digest","description":"A weekly newsletter exploring Caribbean culture, tech, fintech, innovation and diaspora stories.","publisher":{"@type":"Organization","name":"JOS Productions","url":"https://josproductions.com"}}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#080810;--ink2:#0f0f1a;--cyan:#00c8f0;--pink:#e8186d;--gold:#f0b429;--mint:#4ddba4;--white:#fff;--muted:rgba(255,255,255,.52);--border:rgba(255,255,255,.08);--glass:rgba(255,255,255,.04);--glass2:rgba(255,255,255,.07);--r:14px;--r-lg:22px}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+    body{font-family:'Inter',sans-serif;background:var(--ink);color:var(--white);overflow-x:hidden}
+    body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 70% 55% at 5% 15%,rgba(0,200,240,.10) 0%,transparent 60%),radial-gradient(ellipse 55% 45% at 95% 85%,rgba(232,24,109,.09) 0%,transparent 55%)}
+    *{position:relative;z-index:1}
+    nav{position:fixed;top:0;left:0;right:0;z-index:200;height:60px;padding:0 2rem;display:flex;align-items:center;background:rgba(8,8,16,.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+    .nav-inner{max-width:1200px;margin:0 auto;width:100%;display:flex;justify-content:space-between;align-items:center}
+    .nav-logo{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;background:linear-gradient(120deg,var(--cyan),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-decoration:none}
+    .nav-back{font-size:.82rem;color:var(--muted);text-decoration:none;transition:color .2s}.nav-back:hover{color:var(--white)}
+    .hero{min-height:100vh;display:flex;align-items:center;padding:80px 2rem 4rem;text-align:center}
+    .hero-inner{max-width:720px;margin:0 auto}
+    .badge{display:inline-flex;align-items:center;gap:.45rem;font-size:.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(240,180,41,.1);border:1px solid rgba(240,180,41,.25);padding:.3rem .8rem;border-radius:50px;margin-bottom:1.5rem}
+    .badge span{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:blink 1.6s ease-in-out infinite}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+    h1{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:900;line-height:1.08;letter-spacing:-1px;margin-bottom:1.25rem}
+    h1 em{font-style:italic;background:linear-gradient(120deg,var(--cyan),var(--mint));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .hero-desc{font-size:1.05rem;line-height:1.8;color:rgba(255,255,255,.7);margin-bottom:2.5rem}
+    .sub-box{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--r-lg);padding:2rem;margin-bottom:2rem}
+    .sub-box p{font-size:.85rem;color:var(--muted);margin-bottom:1.25rem}
+    .btn{padding:.75rem 2rem;border-radius:10px;border:none;font-size:.92rem;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;transition:all .2s;font-family:'Inter',sans-serif}
+    .btn-primary{background:linear-gradient(135deg,var(--pink),#a01050);color:#fff}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(232,24,109,.4)}
+    .btn-outline{background:transparent;color:var(--white);border:1px solid rgba(255,255,255,.2);font-size:.85rem;padding:.6rem 1.4rem}
+    .btn-outline:hover{background:var(--glass2);transform:translateY(-2px)}
+    .proof{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;margin-top:1.5rem}
+    .proof span{font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:.35rem}
+    section{padding:5rem 2rem}
+    .container{max-width:1100px;margin:0 auto}
+    .slabel{font-size:.7rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--cyan);margin-bottom:.6rem;text-align:center}
+    .stitle{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:900;line-height:1.15;margin-bottom:.75rem;letter-spacing:-.3px;text-align:center}
+    .stitle em{font-style:italic;background:linear-gradient(120deg,var(--cyan),var(--mint));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .divider{height:1px;background:var(--border)}
+    #expect{background:var(--ink2)}
+    .topics{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.1rem;margin-top:2.5rem}
+    .topic{background:var(--glass2);border:1px solid var(--border);border-radius:var(--r);padding:1.4rem;transition:all .25s}
+    .topic:hover{border-color:rgba(0,200,240,.3);transform:translateY(-3px)}
+    .topic-icon{font-size:1.6rem;margin-bottom:.6rem}
+    .topic h4{font-size:.92rem;font-weight:700;color:var(--white);margin-bottom:.35rem}
+    .topic p{font-size:.82rem;color:var(--muted);line-height:1.6}
+    #sample{background:var(--ink)}
+    .sample{max-width:680px;margin:2.5rem auto 0;background:var(--glass2);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden}
+    .s-head{padding:1.25rem 2rem;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+    .s-from{font-size:.78rem;color:var(--muted)}.s-from strong{color:var(--white)}
+    .s-date{font-size:.75rem;color:rgba(255,255,255,.3)}
+    .s-body{padding:2rem}
+    .s-subject{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:900;margin-bottom:1rem;line-height:1.3}
+    .s-intro{font-size:.9rem;line-height:1.8;color:rgba(255,255,255,.72);margin-bottom:1.25rem}
+    .s-label{font-size:.68rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--cyan);margin-bottom:.6rem}
+    .s-story{background:rgba(0,0,0,.3);border-left:3px solid var(--pink);border-radius:0 8px 8px 0;padding:1rem 1.25rem;margin-bottom:.85rem}
+    .s-story h5{font-size:.88rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
+    .s-story p{font-size:.8rem;color:var(--muted);line-height:1.55}
+    .s-foot{padding:1rem 2rem;border-top:1px solid var(--border);font-size:.75rem;color:rgba(255,255,255,.3);text-align:center}
+    #why{background:var(--ink2)}
+    .why{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin-top:2.5rem}
+    .why-item{background:var(--glass2);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem 1.4rem;transition:all .25s}
+    .why-item:hover{border-color:rgba(77,219,164,.3)}
+    .why-item .ic{font-size:1.4rem;margin-bottom:.5rem}
+    .why-item h4{font-size:.88rem;font-weight:700;color:var(--white);margin-bottom:.3rem}
+    .why-item p{font-size:.8rem;color:var(--muted);line-height:1.6}
+    #cta{background:var(--ink)}
+    .cta-box{max-width:600px;margin:0 auto;text-align:center;background:linear-gradient(135deg,rgba(232,24,109,.12),rgba(107,44,145,.12));border:1px solid rgba(232,24,109,.22);border-radius:var(--r-lg);padding:3rem 2rem}
+    .cta-box h2{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;margin-bottom:.75rem}
+    .cta-box p{font-size:.92rem;color:var(--muted);line-height:1.7;margin-bottom:1.75rem}
+    footer{background:#000;border-top:1px solid var(--border);padding:2rem;text-align:center}
+    footer p{font-size:.8rem;color:rgba(255,255,255,.3)}
+    footer a{color:rgba(255,255,255,.45);text-decoration:none}
+    footer a:hover{color:var(--muted)}
+    @media(max-width:640px){section{padding:3.5rem 1.25rem}nav{padding:0 1.25rem}.cta-box{padding:2rem 1.25rem}}
+  </style>
+</head>
+<body>
+<nav><div class="nav-inner"><a href="index.html" class="nav-logo">Caribbean Chronicles by JOS</a><a href="index.html" class="nav-back">← Back to site</a></div></nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="badge"><span></span> Published every Tuesday</div>
+    <h1>The Caribbean<br><em>Digest</em></h1>
+    <p class="hero-desc">Stories, ideas, and cultural shifts shaping the Caribbean and its global influence — written by LaToya of JOS Productions and delivered to your inbox every Tuesday.</p>
+    <div class="sub-box">
+      <p>Free to subscribe. No spam. Unsubscribe anytime.</p>
+      <a href="https://jos-newsletter-7b9791.beehiiv.com/subscribe" target="_blank" class="btn btn-primary" style="display:block;text-align:center;margin-bottom:.85rem">Subscribe Free →</a>
+      <a href="https://jos-newsletter-7b9791.beehiiv.com/" target="_blank" class="btn btn-outline">Browse the Archive</a>
+    </div>
+    <div class="proof">
+      <span>✅ Every Tuesday</span>
+      <span>✅ Also on LinkedIn</span>
+      <span>✅ Full archive available</span>
+      <span>✅ Caribbean-first coverage</span>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<section id="expect">
+  <div class="container">
+    <p class="slabel">What's Inside</p>
+    <h2 class="stitle">Every edition <em>covers</em></h2>
+    <div class="topics">
+      <div class="topic"><div class="topic-icon">💳</div><h4>Caribbean Fintech</h4><p>Digital banking, payments innovation, and the startups reshaping how the Caribbean moves money.</p></div>
+      <div class="topic"><div class="topic-icon">🖥️</div><h4>Tech & Innovation</h4><p>Caribbean founders, tech hubs, and the region's growing presence in the global technology landscape.</p></div>
+      <div class="topic"><div class="topic-icon">🎭</div><h4>Culture & Identity</h4><p>How Caribbean culture is influencing music, film, fashion, and global conversations about identity.</p></div>
+      <div class="topic"><div class="topic-icon">🌍</div><h4>Diaspora Stories</h4><p>The Caribbean people making waves globally — in business, government, arts, and beyond.</p></div>
+      <div class="topic"><div class="topic-icon">🚀</div><h4>Entrepreneurship</h4><p>Startup funding, business growth, and what it takes to build a company from the Caribbean.</p></div>
+      <div class="topic"><div class="topic-icon">🏝️</div><h4>Hidden Gems</h4><p>The stories, places, and people that mainstream media misses — told with the depth they deserve.</p></div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<section id="sample">
+  <div class="container">
+    <p class="slabel">Sample Edition</p>
+    <h2 class="stitle">What a <em>typical edition</em> looks like</h2>
+    <div class="sample">
+      <div class="s-head"><div class="s-from"><strong>Caribbean Chronicles by JOS</strong><br>contact@josproductions.com</div><div class="s-date">Tuesday Edition</div></div>
+      <div class="s-body">
+        <div class="s-subject">🌴 The Caribbean is moving — are you watching?</div>
+        <p class="s-intro">Good morning! This week we're diving into three stories that prove the Caribbean isn't just a destination — it's a movement. From fintech funding rounds to a filmmaker breaking barriers, here's what you need to know.</p>
+        <div class="s-label">📰 This Week's Stories</div>
+        <div class="s-story"><h5>Caribbean startups attracted record diaspora investment this quarter</h5><p>A new report shows diaspora-backed funding for Caribbean tech companies hit an all-time high — and the sectors leading the charge may surprise you.</p></div>
+        <div class="s-story"><h5>The filmmaker rewriting the rules of Caribbean distribution</h5><p>How one director from a small island is landing deals that major studios couldn't — and what it means for the future of Caribbean cinema.</p></div>
+        <div class="s-story"><h5>Is Caribbean fintech ready for its mainstream moment?</h5><p>Digital wallets and regional payment systems are gaining traction. We break down which players to watch and what's holding back wider adoption.</p></div>
+        <p style="font-size:.82rem;color:var(--muted);margin-top:1rem">Plus: this week's Caribbean Snack episode, listener shoutouts, and what's coming Wednesday on the podcast.</p>
+      </div>
+      <div class="s-foot">Caribbean Chronicles by JOS · <a href="https://jos-newsletter-7b9791.beehiiv.com/" style="color:rgba(255,255,255,.4)">View in browser</a> · Unsubscribe anytime</div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<section id="why">
+  <div class="container">
+    <p class="slabel">Why Subscribe</p>
+    <h2 class="stitle">The Caribbean story <em>no one else tells</em></h2>
+    <div class="why">
+      <div class="why-item"><div class="ic">🎯</div><h4>Caribbean-first</h4><p>Written by someone from the region, for people who care about it. Not an afterthought — the whole point.</p></div>
+      <div class="why-item"><div class="ic">📖</div><h4>Real depth</h4><p>Context, analysis, and storytelling — not just headlines. Understand what's happening and why it matters.</p></div>
+      <div class="why-item"><div class="ic">🔗</div><h4>Paired with the podcast</h4><p>Every newsletter connects to Caribbean Chronicles — deeper dives and conversations to go with your reading.</p></div>
+      <div class="why-item"><div class="ic">🆓</div><h4>Always free</h4><p>No paywall. Caribbean stories for anyone who wants to read them — subscribe and stay as long as you like.</p></div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<section id="cta">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Ready to join?</h2>
+      <p>Subscribe free and get the Caribbean Digest in your inbox every Tuesday. Takes 10 seconds.</p>
+      <a href="https://jos-newsletter-7b9791.beehiiv.com/subscribe" target="_blank" class="btn btn-primary">Subscribe on Beehiiv →</a>
+      <div style="margin-top:1rem"><a href="https://jos-newsletter-7b9791.beehiiv.com/" target="_blank" style="font-size:.82rem;color:var(--cyan);text-decoration:none">Browse the full archive first →</a></div>
+    </div>
+  </div>
+</section>
+
+<footer><p>© 2026 Caribbean Chronicles by JOS · <a href="index.html">Main Site</a> · <a href="https://jos-newsletter-7b9791.beehiiv.com/subscribe" target="_blank">Subscribe</a> · <a href="mailto:contact@josproductions.com">Contact</a></p></footer>
+</body>
+</html>
