@@ -9,17 +9,17 @@
   <link rel="canonical" href="https://josproductions.com/media-kit.html">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{--ink:#080810;--ink2:#0f0f1a;--cyan:#00c8f0;--pink:#e8186d;--gold:#f0b429;--mint:#4ddba4;--white:#fff;--muted:rgba(255,255,255,.52);--border:rgba(255,255,255,.08);--glass:rgba(255,255,255,.04);--glass2:rgba(255,255,255,.07);--r:14px;--r-lg:22px}
+    :root{--ink:#f5f0e8;--ink2:#ede6d8;--cyan:#0096b4;--pink:#d41464;--gold:#c47d00;--mint:#1a9460;--white:#1a1208;--muted:rgba(40,25,10,.55);--border:rgba(40,25,10,.10);--glass:rgba(40,25,10,.04);--glass2:rgba(40,25,10,.06);--r:14px;--r-lg:22px}
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{font-family:'Inter',sans-serif;background:var(--ink);color:var(--white);overflow-x:hidden}
-    body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 70% 55% at 5% 15%,rgba(0,200,240,.10) 0%,transparent 60%),radial-gradient(ellipse 55% 45% at 95% 85%,rgba(232,24,109,.09) 0%,transparent 55%)}
+    body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 70% 55% at 8% 15%,rgba(220,130,30,.15) 0%,transparent 60%),radial-gradient(ellipse 55% 45% at 92% 80%,rgba(232,24,109,.11) 0%,transparent 55%)}
     *{position:relative;z-index:1}
 
-    nav{position:fixed;top:0;left:0;right:0;z-index:200;height:60px;padding:0 2rem;display:flex;align-items:center;background:rgba(8,8,16,.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+    nav{position:fixed;top:0;left:0;right:0;z-index:200;height:60px;padding:0 2rem;display:flex;align-items:center;background:rgba(245,240,232,.96);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
     .nav-inner{max-width:1200px;margin:0 auto;width:100%;display:flex;justify-content:space-between;align-items:center}
     .nav-logo{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;background:linear-gradient(120deg,var(--cyan),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-decoration:none}
-    .nav-back{font-size:.82rem;color:var(--muted);text-decoration:none;transition:color .2s}
+    .nav-back{font-size:.82rem;color:rgba(40,25,10,.6);text-decoration:none;transition:color .2s}
     .nav-back:hover{color:var(--white)}
 
     .hero{padding:120px 2rem 5rem;text-align:center}
@@ -37,29 +37,29 @@
 
     section{padding:4rem 2rem}
     .container{max-width:1100px;margin:0 auto}
-    .section-label{font-size:.7rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--cyan);margin-bottom:.6rem}
+    .section-label{font-size:.7rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#0078a0;margin-bottom:.6rem}
     .section-title{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:900;line-height:1.15;margin-bottom:.75rem;letter-spacing:-.3px}
     .section-title em{font-style:italic;background:linear-gradient(120deg,var(--cyan),var(--mint));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-    .divider{height:1px;background:var(--border)}
+    .divider{height:1px;background:rgba(40,25,10,.10)}
 
     /* STATS */
     .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-top:2.5rem}
-    .stat-card{background:var(--glass2);border:1px solid var(--border);border-radius:var(--r-lg);padding:1.75rem 1.5rem;text-align:center}
+    .stat-card{background:rgba(255,255,255,.75);border:1px solid rgba(40,25,10,.12);border-radius:var(--r-lg);padding:1.75rem 1.5rem;text-align:center}
     .stat-card .num{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:900;background:linear-gradient(135deg,var(--cyan),var(--mint));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.3rem}
-    .stat-card .label{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+    .stat-card .label{font-size:.8rem;color:rgba(40,25,10,.6);text-transform:uppercase;letter-spacing:1px}
 
     /* ABOUT */
-    #about-section{background:var(--ink2)}
+    #about-section{background:#ede6d8}
     .about-2col{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:2rem;align-items:start}
-    .about-2col p{font-size:.96rem;line-height:1.82;color:rgba(255,255,255,.72);margin-bottom:1rem}
+    .about-2col p{font-size:.96rem;line-height:1.82;color:rgba(30,20,8,.72);margin-bottom:1rem}
     .about-2col strong{color:var(--white)}
     .audience-pills{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
     .pill{padding:.35rem .9rem;border-radius:50px;font-size:.78rem;font-weight:600;border:1px solid var(--border);background:var(--glass2);color:rgba(255,255,255,.75)}
 
     /* PACKAGES */
-    #packages{background:var(--ink)}
+    #packages{background:#f5f0e8}
     .packages-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem;margin-top:2.5rem}
-    .pkg-card{background:var(--glass2);border:1px solid var(--border);border-radius:var(--r-lg);padding:1.75rem;transition:all .25s}
+    .pkg-card{background:rgba(255,255,255,.75);border:1px solid rgba(40,25,10,.12);border-radius:var(--r-lg);padding:1.75rem;transition:all .25s}
     .pkg-card:hover{border-color:rgba(0,200,240,.3);transform:translateY(-3px)}
     .pkg-card.featured{border-color:rgba(232,24,109,.35);background:rgba(232,24,109,.07)}
     .pkg-label{display:inline-block;font-size:.65rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:.2rem .6rem;border-radius:4px;margin-bottom:.75rem}
@@ -69,37 +69,37 @@
     .pkg-label.d{background:rgba(232,24,109,.15);color:var(--pink)}
     .pkg-label.e{background:rgba(185,117,240,.15);color:#b975f0}
     .pkg-title{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:900;margin-bottom:.6rem}
-    .pkg-desc{font-size:.85rem;color:var(--muted);line-height:1.65;margin-bottom:1rem}
+    .pkg-desc{font-size:.85rem;color:rgba(40,25,10,.6);line-height:1.65;margin-bottom:1rem}
     .pkg-includes{list-style:none;display:flex;flex-direction:column;gap:.4rem}
-    .pkg-includes li{font-size:.82rem;color:rgba(255,255,255,.7);display:flex;gap:.5rem;align-items:flex-start}
+    .pkg-includes li{font-size:.82rem;color:rgba(40,25,10,.7);display:flex;gap:.5rem;align-items:flex-start}
     .pkg-includes li::before{content:'✓';color:var(--mint);font-weight:700;flex-shrink:0}
 
     /* TESTIMONIALS */
-    #testimonials{background:var(--ink2)}
+    #testimonials{background:#ede6d8}
     .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem;margin-top:2.5rem}
-    .testimonial{background:var(--glass2);border:1px solid var(--border);border-radius:var(--r-lg);padding:1.5rem}
-    .testimonial blockquote{font-size:.95rem;line-height:1.7;color:rgba(255,255,255,.82);font-style:italic;margin-bottom:.75rem}
-    .testimonial-attr{font-size:.78rem;color:var(--muted)}
+    .testimonial{background:rgba(255,255,255,.75);border:1px solid rgba(40,25,10,.12);border-radius:var(--r-lg);padding:1.5rem}
+    .testimonial blockquote{font-size:.95rem;line-height:1.7;color:rgba(30,20,8,.8);font-style:italic;margin-bottom:.75rem}
+    .testimonial-attr{font-size:.78rem;color:rgba(40,25,10,.5)}
 
     /* WHY */
-    #why{background:var(--ink)}
+    #why{background:#f5f0e8}
     .why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.1rem;margin-top:2.5rem}
-    .why-item{background:var(--glass2);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem 1.4rem}
+    .why-item{background:rgba(255,255,255,.75);border:1px solid rgba(40,25,10,.12);border-radius:var(--r);padding:1.25rem 1.4rem}
     .why-item .icon{font-size:1.5rem;margin-bottom:.5rem}
-    .why-item h4{font-size:.9rem;font-weight:700;color:var(--white);margin-bottom:.35rem}
-    .why-item p{font-size:.82rem;color:var(--muted);line-height:1.6}
+    .why-item h4{font-size:.9rem;font-weight:700;color:#1a1208;margin-bottom:.35rem}
+    .why-item p{font-size:.82rem;color:rgba(40,25,10,.6);line-height:1.6}
 
     /* CTA */
-    #cta-section{background:var(--ink2)}
+    #cta-section{background:#ede6d8}
     .cta-box{background:linear-gradient(135deg,rgba(232,24,109,.12),rgba(107,44,145,.12));border:1px solid rgba(232,24,109,.22);border-radius:var(--r-lg);padding:3.5rem 2.5rem;text-align:center;max-width:700px;margin:2.5rem auto 0}
-    .cta-box h2{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;margin-bottom:.75rem}
-    .cta-box p{font-size:.95rem;color:var(--muted);line-height:1.7;margin-bottom:1.75rem;max-width:480px;margin-left:auto;margin-right:auto}
+    .cta-box h2{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;margin-bottom:.75rem;color:#1a1208}
+    .cta-box p{font-size:.95rem;color:rgba(40,25,10,.6);line-height:1.7;margin-bottom:1.75rem;max-width:480px;margin-left:auto;margin-right:auto}
     .cta-contacts{display:flex;flex-direction:column;gap:.5rem;margin-top:1.5rem}
-    .cta-contact-row{font-size:.88rem;color:rgba(255,255,255,.65)}
+    .cta-contact-row{font-size:.88rem;color:rgba(40,25,10,.65)}
     .cta-contact-row a{color:var(--cyan);text-decoration:none}
     .cta-contact-row a:hover{text-decoration:underline}
 
-    footer{background:#000;border-top:1px solid var(--border);padding:2rem;text-align:center}
+    footer{background:#1a1208;border-top:1px solid rgba(255,190,80,.15);padding:2rem;text-align:center}
     footer p{font-size:.8rem;color:rgba(255,255,255,.3)}
     footer a{color:rgba(255,255,255,.4);text-decoration:none}
     footer a:hover{color:var(--muted)}
@@ -119,8 +119,8 @@
 
 <nav>
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Caribbean Chronicles by JOS</a>
-    <a href="index.html" class="nav-back">← Back to site</a>
+    <a href="https://josproductions.com" class="nav-logo">Caribbean Chronicles by JOS</a>
+    <a href="https://josproductions.com" class="nav-back">← Back to site</a>
   </div>
 </nav>
 
@@ -304,6 +304,6 @@
       <p>Let's build something meaningful together for the Caribbean and its diaspora. Reach out to discuss availability, pricing, and custom packages.</p>
       <a href="/cdn-cgi/l/email-protection#8eefeaf8ebfcfae7fdebcee4e1fdfefce1eafbedfae7e1e0fda0ede1e3" class="btn btn-primary">Email Us Today</a>
       <div class="cta-contacts">
-        <div class="cta-contact-row">📢 Advertising: <a href="/cdn-cgi/l/email-protection#b2d3d6c4d7c0c6dbc1d7f2d8ddc1c2c0ddd6c7d1c6dbdddcc19cd1dddf"><span class="__cf_email__" data-cfemail="8dece9fbe8fff9e4fee8cde7e2fefdffe2e9f8eef9e4e2e3fea3eee2e0">[email&#160;protected]</span></a></div>
-        <div class="cta-contact-row">🤝 Partnerships: <a href="/cdn-cgi/l/email-protection#c8b8a9babca6adbabba0a1b8bb88a2a7bbb8baa7acbdabbca1a7a6bbe6aba7a5"><span class="__cf_email__" data-cfemail="0c7c6d7e7862697e7f64657c7f4c66637f7c7e6368796f786563627f226f6361">[email&#160;protected]</span></a></div>
+        <div class="cta-contact-row">📢 Advertising: <a href="/cdn-cgi/l/email-protection#b2d3d6c4d7c0c6dbc1d7f2d8ddc1c2c0ddd6c7d1c6dbdddcc19cd1dddf"><span class="" data-cfemail="8dece9fbe8fff9e4fee8cde7e2fefdffe2e9f8eef9e4e2e3fea3eee2e0">[email&#160;protected]</span></a></div>
+        <div class="cta-contact-row">🤝 Partnerships: <a href="/cdn-cgi/l/email-protection#c8b8a9babca6adbabba0a1b8bb88a2a7bbb8baa7acbdabbca1a7a6bbe6aba7a5"><span class="" data-cfemail="0c7c6d7e7862697e7f64657c7f4c66637f7c7e6368796f786563627f226f6361">[email&#160;protected]</span></a></div>
         <div class="cta-contact-row">📧 General: <a href="/cdn
