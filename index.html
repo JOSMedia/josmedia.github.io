@@ -183,7 +183,6 @@
       <li><a href="#about">About</a></li>
       <li><a href="#newsletter">Newsletter</a></li>
       <li><a href="#company">Company</a></li>
-      <li><a href="https://josproductions.com/media-kit.html">Media Kit</a></li>
       <li><a href="#newsletter" class="nav-cta">Subscribe</a></li>
     </ul>
   </div>
@@ -199,7 +198,6 @@
       <div class="hero-actions">
         <a href="#listen" class="btn btn-primary">Listen Now</a>
         <a href="#newsletter" class="btn btn-outline">Get the Newsletter</a>
-        <a href="https://josproductions.com/media-kit.html" class="btn btn-outline">Media Kit</a>
       </div>
       <div class="hero-stats">
         <div class="stat"><span class="stat-num">13+</span><span class="stat-label">Episodes</span></div>
@@ -301,7 +299,6 @@
         <div class="tech-item"><div class="tech-item-label">Market Opportunity</div><p>The Caribbean diaspora numbers over 30 million globally. There is a significant gap in high-quality, tech-forward digital media serving this audience across culture, fintech, and innovation.</p></div>
         <div class="tech-item"><div class="tech-item-label">Current Products</div><p>Caribbean Chronicles podcast (13+ episodes, 5 major platforms), weekly Beehiiv newsletter, Caribbean Snack mini-series, and this web platform.</p></div>
         <div class="tech-item"><div class="tech-item-label">Technology Roadmap</div><p>AI-assisted content workflows, Caribbean creator analytics dashboard, audience segmentation tools, and a content API for Caribbean media distribution.</p></div>
-        <a href="https://josproductions.com/media-kit.html" class="btn btn-cyan" style="text-align:center;margin-top:.5rem">View Full Media Kit →</a>
       </div>
     </div>
   </div>
@@ -340,9 +337,8 @@
         <h5 style="margin-top:1.5rem">Company</h5>
         <ul>
           <li><a href="#company">About JOS Productions</a></li>
-          <li><a href="https://josproductions.com/media-kit.html">Media Kit</a></li>
-          <li><a href="mailto:advertise@josproductions.com">Advertise</a></li>
-          <li><a href="mailto:partnerships@josproductions.com">Partnerships</a></li>
+          <li><a href="/cdn-cgi/l/email-protection#a0c1c4d6c5d2d4c9d3c5e0cacfd3d0d2cfc4d5c3d4c9cfced38ec3cfcd">Advertise</a></li>
+          <li><a href="/cdn-cgi/l/email-protection#3848594a4c565d4a4b5051484b7852574b484a575c4d5b4c5157564b165b5755">Partnerships</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -357,7 +353,7 @@
       <div class="footer-col">
         <h5>Contact</h5>
         <ul>
-          <li><span style="color:rgba(255,240,210,.7)">contact@josproductions.com</span></li>
+          <li><span style="color:rgba(255,240,210,.7)"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ea8985849e8b899eaa8085999a98858e9f899e83858499c4898587">[email&#160;protected]</a></span></li>
         </ul>
         <h5 style="margin-top:1.5rem">Legal</h5>
         <ul>
@@ -373,13 +369,13 @@
         <a href="https://josmedia.github.io/privacy.html">Privacy</a>
         <a href="https://josmedia.github.io/terms.html">Terms</a>
         <a href="https://josmedia.github.io/cookies.html">Cookies</a>
-        <a href="mailto:contact@josproductions.com">Contact</a>
+        <a href="/cdn-cgi/l/email-protection#5635393822373522163c3925262439322335223f3938257835393b">Contact</a>
       </div>
     </div>
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const EPISODE_DESCS = {
   "Episode 10: The awards gap":"Exploring the systemic gap in how Caribbean artists and creators are recognized — or overlooked — by major award institutions globally.",
   "Episode 09: Film Without Borders":"How Caribbean filmmakers are breaking through to global audiences, navigating distribution challenges, and redefining Caribbean cinema on the world stage.",
@@ -485,14 +481,4 @@ function buildCard(ep,idx){
       fill.style.width=(audio.currentTime/audio.duration*100)+'%';
       cur.textContent=fmtTime(audio.currentTime);
     });
-    audio.addEventListener('ended',()=>{
-      btn.innerHTML=playIcon();btn.classList.remove('playing');
-      fill.style.width='0%';cur.textContent='0:00';
-      activeAudio=null;activeBtn=null;
-    });
-  }
-
-  btn.addEventListener('click',()=>{
-    init();
-    if(activeAudio&&activeAudio!==audio){activeAudio.pause();activeBtn.innerHTML=playIcon();activeBtn.classList.remove('playing');}
-    if(audio.paused){
+    audio.addEventList
